@@ -1,0 +1,9 @@
+import numpy as np
+def vanderMatrix(Vector,N):
+    x=np.array(Vector)
+    s=np.column_stack([x**(N-1-i) for i in range(N)])
+    return s
+
+
+
+vanderMatrix([1,2,7,6],4)
